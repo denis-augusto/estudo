@@ -7,7 +7,7 @@ use App\Http\Controllers\CostomerController;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::get('/costomers', [CostomerController::class, 'index'])->name('costomers.index');
